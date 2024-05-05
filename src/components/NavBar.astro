@@ -1,0 +1,101 @@
+<script>
+  const doc = document;
+  const menuOpen = doc.querySelector(".menu");
+  const menuClose = doc.querySelector(".close");
+  const overlay = doc.querySelector(".overlay");
+
+  menuOpen?.addEventListener("click", () => {
+    overlay?.classList.add("overlay--active");
+  });
+
+  menuClose?.addEventListener("click", () => {
+    overlay?.classList.remove("overlay--active");
+  });
+</script>
+
+<nav>
+  <ul class="nav__links">
+    <div class="dropdown">
+      <li class="dropbtn"><a href="/HTML/index.html">Home</a></li>
+    </div>
+
+    <div class="dropdown">
+      <li class="dropbtn"><a href="/HTML/Nav/about.html">About Us</a></li>
+      <div class="dropdown-content">
+        <a href="#">Our Awards</a>
+        <a href="#">Our Partners</a>
+        <a href="#">Parity's Team</a>
+        <a href="#">Parity's Trustees</a>
+        <a href="#">Parity's Timeline</a>
+        <a href="#">Events</a>
+        <a href="#">Our Shops</a>
+        <a href="#">Careers</a>
+        <a href="#">News & Blog</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <li class="dropbtn">
+        <a href="/HTML/Nav/services.html">Services</a>
+      </li>
+      <div class="dropdown-content">
+        <a href="#">Day Services, 18+</a>
+        <a href="#">Activity Scheme, 12+</a>
+        <a href="#">Music Therapy Services</a>
+        <a href="#">Development</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <li class="dropbtn">
+        <a href="/HTML/Nav/prof.html">Professionals</a>
+      </li>
+      <div class="dropdown-content">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <li class="dropbtn">
+        <a href="/HTML/Nav/support.html">Support Us</a>
+      </li>
+      <div class="dropdown-content">
+        <a href="#">Volunteering</a>
+        <a href="#">Sponsored Challenges</a>
+        <a href="#">Hold your own fundraiser</a>
+        <a href="#">Hold a PariTea</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <li class="dropbtn"><a href="/HTML/Nav/contact.html">Contact</a></li>
+    </div>
+
+    <div class="dropdown">
+      <li class="dropbtn">
+        <a href="/HTML/Nav/join.html">Join our mailing list</a>
+      </li>
+    </div>
+  </ul>
+</nav>
+
+<div class="overlay">
+  <a class="close">&times;</a>
+  <div class="overlay__content">
+    <a href="/HTML/Nav/about.html">About</a>
+    <a href="/HTML/Nav/services.html">Services</a>
+    <a href="/HTML/Nav/prof.html">Professionals</a>
+    <a href="/HTML/Nav/support.html">Support Us</a>
+    <a href="/HTML/Nav/contact.html">Contact</a>
+    <a href="/HTML/Nav/join.html">Join our mailing list</a>
+    <a href="/HTML/Nav/prof.html">Professionals</a>
+    <a
+      class="button"
+      href="https://cafdonate.cafonline.org/12467#!/DonationDetails"
+      >Make a donation</a
+    >
+  </div>
+</div>
+<p class="menu cta">Menu</p>
