@@ -6,7 +6,7 @@ description:
   are great and you're part of a well-trained motivated team."
 author: "Astro Learner"
 image:
-  url: "/Links/3.png"
+  url: "/Parity/Links/3.png"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---

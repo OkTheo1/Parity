@@ -7,7 +7,7 @@ description:
   active, moves around, plays, and exercises.\""
 author: "Astro Learner"
 image:
-  url: "/Links/climb.png"
+  url: "/Parity/Links/climb.png"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---

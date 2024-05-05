@@ -9,7 +9,7 @@ description:
   came out and it's shone ever since."
 author: "Astro Learner"
 image:
-  url: "/Links/can.png"
+  url: "/Parity/Links/can.png"
   alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
