@@ -14,12 +14,11 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 
 <Layout title="Welcome to Parity.">
   <header>
-    <a class="logo" href="/"></a>
-    <img src="/Parity/img/Parity-colour-logo.jpg" alt="logo" />
+    <a class="logo" href="/"><img src="/Parity/img/Parity-colour-logo.jpg" alt="logo" /></a>
+    <NavBar />
+    <DonationButton />
   </header>
 
-  <NavBar />
-  <DonationButton />
 
   <section id="services">
     <div class="container">
