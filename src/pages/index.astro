@@ -3,22 +3,41 @@ import Layout from "../layouts/Layout.astro";
 import Service from "../components/Service.astro";
 import NavBar from "../components/NavBar.astro";
 import DonationButton from "../components/DonationButton.astro";
-import BlogPost from "../components/BlogPost.astro";
 import QuestionsForm from "../components/QuestionsForm.astro";
 import "../styles/global.css";
+import "../styles/blog.css"
+import "../styles/carousel.css"
 import Footer from "../components/Footer.astro";
+import Blog from "../components/Blog.astro";
+import Carousel from "../components/carousel.astro";
 
 const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
-<!-- <script type="text/javascript" src="mobile.js"></script> -->
+
+<script type="text/javascript" src="mobile.js"></script>
+
 
 <Layout title="Welcome to Parity.">
   <header>
-    <a class="logo" href="/"><img src="/Parity/img/Parity-colour-logo.jpg" alt="logo" /></a>
+    <a class="logo" href="/"><img src="/Parity/img/Parity-colour-logo.jpg"
+      style="width: 230px; height: 130px;"
+      alt="logo" /></a>
     <NavBar />
     <DonationButton />
   </header>
 
+  <section id="headimg"
+    <div class="himg">
+      <img src="Parity/Links/ParityActivityScheme.png"
+      width="2620px"
+      height="600px"
+      style="width: 2620px; height: 600px;"
+      alt="Banner image of a person with a disability holding flowers, while surrounded by nature, in a wheelchair. ">
+    ></div>
+    <div class="imgbox">
+      <h1>A LOCAL CHARITY THAT PROVIDES A LIFELINE</h1>
+      <p>When people with multiple disabilities finish school, our services are there to meet their needs and open up a world of opportunities</p>
+    </div>
 
   <section id="services">
     <div class="container">
@@ -59,26 +78,18 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
     </div>
   </section>
 
-  <section id="News">
+  <section id="carousel">
     <div class="container">
-      <div class="news-title">
-        <h1>Latest News</h1>
-        <div class="line"></div>
-      </div>
-      <div class="news">
-        {
-          allPosts.map((post) => (
-            <BlogPost
-              url={post.url}
-              title={post.frontmatter.title}
-              description={post.frontmatter.description}
-              image={post.frontmatter.image.url}
-              imageAlt={post.frontmatter.image.alt}
-            />
-          ))
-        }
-      </div>
+      
+      <Carousel/>
     </div>
+  </section>
+
+
+
+  <section id="Blog">
+    <div class="container">
+    <Blog/>
   </section>
 
   <QuestionsForm />

@@ -1,13 +1,13 @@
 @import url("https://fonts.cdnfonts.com/css/nexa-bold");
 @font-face {
   font-family: "Nexa";
-  src: url("/Parity/Fonts/Nexa-Bold.otf") format("truetype"),
-    url("/Parity/Fonts/NexaBlack.otf") format("opentype"),
-    url("/Parity/Fonts/NexaHeavy.otf") format("opentype"),
-    url("/Parity/Fonts/Nexa-Light.otf") format("opentype"),
-    url("/Parity/Fonts/NexaRegular.otf") format("opentype"),
-    url("/Parity/Fonts/AdobeFnt20.lst") format("opentype"),
-    url("/Parity/Fonts/Gotham-Black.otf") format("opentype");
+  src: url("/Fonts/Nexa-Bold.otf") format("truetype"),
+    url("/Fonts/NexaBlack.otf") format("opentype"),
+    url("/Fonts/NexaHeavy.otf") format("opentype"),
+    url("/Fonts/Nexa-Light.otf") format("opentype"),
+    url("/Fonts/NexaRegular.otf") format("opentype"),
+    url("/Fonts/AdobeFnt20.lst") format("opentype"),
+    url("/Fonts/Gotham-Black.otf") format("opentype");
 }
 
 * {
@@ -40,13 +40,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10;
+  padding: 0px 10;
   background-color: white;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 125.64061px;
+  position:relative; 
+  top:0px; 
+  left:50px; 
+  margin-left:0px; 
+  margin-right:0px; 
+
 }
 
 .logo {
   cursor: pointer;
-  margin-left: 20px;
 }
 
 .nav__links a,
@@ -80,10 +89,10 @@ header {
 }
 
 .nav__links a {
-  color: #001f5b;
+  color: #032D71;
   font-family: "Nexa-Bold", sans-serif;
   font-weight: bolder;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -124,7 +133,8 @@ header {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #404040;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -290,6 +300,58 @@ section {
   justify-content: center;
 }
 
+  .headimg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #headimg {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #010047;
+    object-fit: fill;
+    flex-wrap: wrap;
+    max-width: fit-content;
+  }
+
+  .imgbox {
+    display: block;
+    align-items: center;
+    position: relative;
+    margin-left: 60%;
+    margin-top: -160px;
+    border: 1px;
+    border-color: #020066;
+    background-color: #020066;
+    border-style: solid;
+    font-size:12px;
+    padding: 100px 90px;
+    text-align: center;
+    width: 744px;
+    height: 261px;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.336);
+    flex-wrap: wrap;
+  }
+
+  .imgbox h1 {
+    display: flex;
+    margin-top: -60px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 24px;
+    flex-wrap: wrap;
+  }
+
+  .imgbox p {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-family: "Nexa", sans-serif;
+    flex-wrap: wrap;
+  }
+
 .section-title h1 {
   font-size: 55px;
   letter-spacing: 0.5px;
@@ -297,6 +359,7 @@ section {
   font-family: "Nexa-bold", sans-serif;
   margin-bottom: 20px;
   font-weight: bolder;
+  color: white;
 }
 .section-title .line {
   width: 1500px;
@@ -308,9 +371,9 @@ section {
 }
 
 #services {
-  margin-top: 0px;
+  margin-top: 100px;
   margin-bottom: 0px;
-  background-color: #00092b;
+  background-color: #010047;
 }
 
 .services {
@@ -318,7 +381,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  gap: 100px;
+  gap: 90px;
   flex-wrap: wrap;
 }
 
@@ -350,6 +413,7 @@ section {
   font-weight: bolder;
   font-family: "Nexa-bold", sans-serif;
   text-align: center;
+  color: white
 }
 
 .services h3:hover {
@@ -367,6 +431,7 @@ section {
   font-weight: bold;
   font-size: 21px;
   font-family: "Nexa-Bold", sans-serif;
+  color: white;
 }
 
 .services p:hover {
@@ -377,121 +442,20 @@ section {
 
 /* News */
 
-.news-title h1 {
-  font-size: 55px;
-  letter-spacing: 0.5px;
-  text-align: center;
-  font-family: "Nexa-bold", sans-serif;
-  margin-bottom: 20px;
-  font-weight: bolder;
-}
-.news-title .line {
-  width: 1500px;
-  height: 4px;
-  border: 10px;
-  border-radius: 50px;
-  background: var(--secondary);
-  margin: auto;
-}
-
-#News {
-  background-color: #000620;
+#Blog {
+  background-color: #ffffff;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.news {
+.Blog {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: baseline;
   gap: 20px;
   flex-wrap: wrap;
-}
-
-.news img {
-  width: 350px;
-  height: 500px;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-  object-fit: cover;
-}
-.news img:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-}
-
-.news .line {
-  width: 300px;
-  height: 2px;
-  border: 10px;
-  border-radius: 50px;
-  background: var(--secondary);
-  margin-top: 5px;
-  margin-left: 26px;
-}
-.news h3 {
-  margin-top: 15px;
-  font-size: 30px;
-  font-weight: bolder;
-  font-family: "Nexa-bold", sans-serif;
-  text-align: center;
-}
-
-.news h3:hover {
-  transition: 0.5s ease;
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
-.news p {
-  margin-top: 18px;
-  display: flex;
-  max-width: 350px;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: "Nexa-Bold", sans-serif;
-}
-
-.news p:hover {
-  transition: 0.5s ease;
-  transform: scale(1.05);
-  cursor: default;
-}
-
-#testimonial {
-  background: #000000;
-  margin-top: 0px;
-}
-
-#testimonial .container {
-  display: flex;
-  flex-direction: left;
-  align-items: center;
-  max-width: 2000px;
-  gap: 16px;
-  padding: 20px 16px;
-  flex-wrap: wrap;
-}
-#testimonial h1 {
-  font-size: 25px;
-  font-family: "Nexa-bold", sans-serif;
-  text-align: left;
-  margin-top: 20px;
-  margin-left: 10px;
-  display: flex;
-}
-
-#testimonial img {
-  transition: transform 0.3s ease;
-  width: 400px;
-}
-
-#testimonial img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+  text-decoration: none;
 }
 
 #about-us .container {
@@ -611,6 +575,7 @@ section {
   margin-left: 1600px;
   background-color: white;
   border-radius: 1rem;
+  margin-bottom: 100px;
 }
 
 #questions h1 {
@@ -627,7 +592,7 @@ section {
   height: 500px;
   text-align: center;
   margin-left: 600px;
-  margin-top: -490px;
+  margin-top: -600px;
   font-family: "Nexa-Bold", sans-serif;
   font-size: 22px;
   font-weight: bolder;
@@ -686,6 +651,7 @@ button {
 
 footer {
   margin-top: -60px;
+  background-color: white;
 }
 
 footer a {
@@ -712,6 +678,11 @@ footer .container {
   align-items: center;
   gap: 16px;
   list-style: none;
+}
+
+footer img {
+  max-width: 200px;
+  margin-bottom: -10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -805,7 +776,7 @@ footer .container {
     flex-direction: column;
     max-width: 100%;
     height: 25vh;
-    background: url(/Parity/Links/ParityActivityScheme.png);
+    background: url(/Links/ParityActivityScheme.png);
     background-position: top center;
     align-items: center;
     text-align: center;

@@ -1,0 +1,147 @@
+@import url("https://fonts.cdnfonts.com/css/nexa-bold");
+@font-face {
+  font-family: "Nexa";
+  src: url("/Fonts/Nexa-Bold.otf") format("truetype"),
+    url("/Fonts/NexaBlack.otf") format("opentype"),
+    url("/Fonts/NexaHeavy.otf") format("opentype"),
+    url("/Fonts/Nexa-Light.otf") format("opentype"),
+    url("/Fonts/NexaRegular.otf") format("opentype"),
+    url("/Fonts/AdobeFnt20.lst") format("opentype"),
+    url("/Fonts/Gotham-Black.otf") format("opentype");
+}
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: "Nexa-bold", sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body{
+  font-family: "Nexa-Bold", sans-serif;
+}
+
+#blog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.blog-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blog-heading span {
+  color: red;
+}
+
+.blog-heading h3 {
+  font-size: 2.4rem;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  background-color: white;
+  margin: 20px;
+  border: 2px solid black;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+}
+
+.blog-img {
+  width: 100%;
+}
+
+.blog-img img {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  object-position: center;
+}
+
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-text span {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+
+.blog-text .blog-title:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+.blog-text p {
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Nexa-bold",sans-serif;
+  margin: 20px 0px;
+}
+
+.blog-text a{
+  color: #0f0f0f;
+}
+.blog-text a:hover{
+  color: red;
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1250px){
+  .blog-box{
+    width: 300px;
+  }
+}
+@media(max-width:1100px){
+  .blog-box {
+    width: 70%;
+  }
+}
+
+@media(max-width:550px){
+  .blog-box {
+    width: 100%;
+    margin: 20px 10px;
+  }
+  #blog {
+    padding: 20px;
+  }
+}

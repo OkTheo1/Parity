@@ -1,17 +1,3 @@
-# Instructions
-## Requirements
-- [Nodejs](https://nodejs.org/en/download/current)
-- [Git](https://git-scm.com/download/win)
-## Commands
-```sh
-git clone https://github.com/OkTheo1/Parity.git
-npm install
-npm run dev
-```
-
-
-
-
 # Astro Starter Kit: Basics
 
 ```sh
